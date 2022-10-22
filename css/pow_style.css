@@ -1,0 +1,77 @@
+/* 電網學校 style */
+body {
+  /* background-image: url("/img/layout/bg.png"); */
+}
+
+.pow-bg-div {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.pow-bg-img {
+  background: url('/img/layout/bg.png') right bottom no-repeat fixed;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  background-size: 35%;
+}
+
+.pow-nav {
+  position: relative;
+  font-size: 18px;
+  padding: 10px 0;
+}
+.pow-logo {
+  position: absolute;
+  top: 12px;
+  height: 100px;
+  transition: 0.5s;
+}
+
+.pow-menu-cont {
+  margin-left: 140px;
+}
+
+.pow-top-line {
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(160deg, #5dc8be 0%,#89ae5c 99%);
+}
+
+.pow-menu {
+  padding: 8px;
+  font-size: 20px;
+  background: linear-gradient(160deg, #5dc8be 0%,#89ae5c 99%);
+}
+
+/* 滾輪下拉後縮小 header */
+.nz-small-header .pow-top-line{
+  transition: 0.5s;
+  height: 3px;
+}
+.nz-small-header .pow-logo {
+  top: 9px;
+  height: 92px;
+}
+
+.nz-small-header .pow-menu {
+  font-size: 18px;
+  padding: 7px;
+}
+
+.nz-small-header .pow-nav{
+  padding: 6px 0;
+}
+
+/* 人才聯盟 */
+dl#logos dt {
+  float: left;
+  height: 40px;
+  margin: 20px;
+}
+
+dl#logos dt img {
+  height: 40px;
+}

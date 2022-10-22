@@ -6,7 +6,6 @@ header {
     width: 100%;
     z-index: 99;
     top: 0;
-    border-top: solid 6px #45904d;
     background: #ffffff;
     box-shadow: 0 2px 38px rgb(0 0 0 / 8%);
 }
@@ -24,7 +23,7 @@ header {
 }
 
 .nz-bg-warning {
-    background-color: #ff8b32 !important;
+    background-color: #ff6d00 !important;
 }
 
 .nz-bg-success {
@@ -41,7 +40,7 @@ header {
 
 a:link,
 a:visited {
-    color: #45904d;
+    color: #81b26c;
 }
 
 a:hover,
@@ -58,7 +57,7 @@ a:focus {
 }
 
 .nz-primary {
-    color: #45904d;
+    color: #55b1a3;
 }
 
 a.nz-primary:hover,
@@ -89,7 +88,7 @@ a .nz-black:hover {
 }
 
 .nz-warning {
-    color: #ff8b32
+    color: #ff6d00
 }
 
 .btn:focus {
@@ -111,7 +110,7 @@ a .nz-black:hover {
 
 .nz-btn-primary,
 .nz-btn-primary:link {
-    background-color: #649e68;
+    background-color: #55b1a3;
     color: #ffffff;
 }
 
@@ -119,7 +118,7 @@ a .nz-black:hover {
 .nz-btn-primary:active,
 .nz-btn-primary:focus,
 .active.nz-btn-primary {
-    background-color: #45904d;
+    background-color: #46978a;
     color: #ffffff;
 }
 
@@ -155,7 +154,7 @@ a .nz-black:hover {
 }
 
 .nz-carousel .carousel-indicators li {
-    background-color: #649e68;
+    background-color: #55b1a3;
     height: 12px;
     width: 12px;
     border-radius: 50%;
@@ -210,6 +209,12 @@ a .nz-black:hover {
     transition: 0.5s;
 }
 
+.nz-top-line {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(160deg, #5dc8be 0%,#89ae5c 99%);
+}
+
 .nz-nav {
     font-size: 18px;
     padding: 15px 0;
@@ -251,7 +256,7 @@ a .nz-black:hover {
 
 .nz-menu {
     font-size: 20px;
-    background-color: #45904d;
+    background: linear-gradient(160deg, #5dc8be 0%,#89ae5c 99%);
 }
 
 .nz-menu a:link,
@@ -260,7 +265,7 @@ a .nz-black:hover {
 }
 .nz-menu li:hover a,
 .nz-menu li.active a {
-    color: #fff500;
+    color: #efff00;
 }
 
 .nz-menu li {
@@ -269,7 +274,7 @@ a .nz-black:hover {
 
 .nz-menu li:hover,
 .nz-menu li.active {
-    border-bottom: #fff500 solid 3px;
+    border-bottom: #efff00 solid 3px;
     box-sizing: border-box;
     padding: 6px 0 3px;
 }
@@ -286,12 +291,12 @@ a .nz-black:hover {
 
 .nz-subtitle {
     font-size: 18px;
-    color: #ff8b32;
+    color: #ff6d00;
     margin-left: 12px;
 }
 
 .nz-menu-bar {
-    color: #45904d;
+    color: #46978a;
     font-size: 26px;
 }
 
@@ -299,7 +304,7 @@ a .nz-black:hover {
     padding: 10px 40px;
     font-size: 26px;
     font-weight: 400;
-    background-color: #45904d;
+    background-color: #46978a;
 }
 
 .nz-navbar-nav a {
@@ -307,13 +312,13 @@ a .nz-black:hover {
 }
 
 .nz-navbar-nav .active > a {
-    color: #fff500;
+    color: #efff00;
 }
 
 .nz-navbar-collapse {
     height: 100vh;
     overflow: auto;
-    background-color: #45904d;
+    background-color: #46978a;
 }
 
 .nz-navbar-collapse > .nz-navbar-nav {
@@ -325,9 +330,9 @@ a .nz-black:hover {
 }
 
 /* 滾輪下拉後縮小 header */
-.nz-small-header {
+.nz-small-header .nz-top-line{
     transition: 0.5s;
-    border-top: solid 3px #45904d;
+    height: 3px;
 }
 .nz-small-header .nz-logo {
     height: 45px;
@@ -351,7 +356,7 @@ a .nz-black:hover {
 }
 
 .nz-dropdown .dropdown-menu a.dropdown-item {
-    color: #45904d;
+    color: #46978a;
     padding: 10px 25px;
 }
 
@@ -385,7 +390,7 @@ a .nz-black:hover {
 
 /* ----- 焦點訊息 ----- */
 .nz-focus-item {
-    border-left: solid 3px #9dbc1b;
+    border-left: solid 3px #ff6d00;
     padding: 0 0 0 20px;
     margin: 28px 0;
 }
@@ -524,7 +529,7 @@ a .nz-black:hover {
 
 .nz-flag {
     position: absolute;
-    background-color: #ff8b32;
+    background-color: #ff6d00;
     top: 12px;
     right: -29px;
     width: 115px;
@@ -584,7 +589,7 @@ a .nz-black:hover {
 
 /* ---------- footer ------------ */
 footer {
-    background-color: #45904d;
+    background: linear-gradient(160deg, #5dc8be -28%,#89ae5c 99%);
     padding: 30px 0;
     color: #ffffff;
     text-align: left;
@@ -724,7 +729,7 @@ a.nz-a-white:active {
 }
 
 .nz-table-title a:visited {
-    color: #45904d;
+    color: #46978a;
 }
 
 .nz-table-title a:hover {
@@ -782,7 +787,7 @@ a.nz-a-white:active {
 .nz-type-tab a:link,
 .nz-type-tab a,
 .nz-type-tab a:visited {
-    color: #45904d;;
+    color: #81b26c;;
 }
 
 .nz-type-tab a:hover,
@@ -796,11 +801,11 @@ a.nz-a-white:active {
 
 .nz-type-tab .nav-link.active,
 .nz-type-tab .show>.nav-link {
-    background-color: #45904d;
+    background-color: #46978a;
 }
 
 .nz-type-tab .nav-link {
-    border-bottom: solid 2px #45904d;
+    border-bottom: solid 2px #46978a;
     border-radius: 0;
     border-radius: 3px 3px 0 0;
     cursor: pointer;
@@ -902,7 +907,7 @@ a.nz-a-white:active {
 .nz-article-reprint {
     min-width: 200px;
     width: 55%;
-    background-color: #ff8b32;
+    background-color: #ff6d00;
     border-radius: 25px;
     padding: 8px 10px;
     color: #ffffff;
@@ -1037,7 +1042,7 @@ a.nz-a-white:active {
 .nz-file-tool {
     padding: 6px;
     background-color: #ffffff;
-    color: #45904d;
+    color: #46978a;
 }
 .nz-file-tool-btn {
     font-size: 16px;
@@ -1061,7 +1066,7 @@ a.nz-a-white:active {
 .nz-login-card {
     width: 46%;
     max-width: 500px;
-    border-top: 5px solid #45904d;
+    border-top: 5px solid #46978a;
     box-shadow: 6px 8px 27px rgb(0 0 0 / 10%);
     border-radius: 5px 5px 11px 11px;
     background: #ffffff;
@@ -1081,7 +1086,7 @@ a.nz-a-white:active {
 }
 
 .nz-refresh-check:hover {
-    color: #ff8b32;
+    color: #ff6d00;
 }
 
 .nz-or-box {
@@ -1117,7 +1122,7 @@ a.nz-a-white:active {
 }
 
 .nz-login-btn:hover {
-    color: #45904d;
+    color: #46978a;
 }
 
 .nz-login-btn img {
@@ -1139,7 +1144,7 @@ a.nz-a-white:active {
 /* --------- 聯絡我們 --------- */
 .nz-contact-card {
     width: 100%;
-    border-top: 5px solid #45904d;
+    border-top: 5px solid #46978a;
     box-shadow: 6px 8px 27px rgb(0 0 0 / 10%);
     border-radius: 5px 5px 11px 11px;
     background: #ffffff;

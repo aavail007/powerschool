@@ -26,6 +26,8 @@
   <link rel="stylesheet" href="css/plugin/fontawesome-free-5.15.4-web/css/all.min.css" />
   <!-- 淨零永續學校 css -->
   <link rel="stylesheet" href="css/nz_style.css" />
+  <!-- 電網學校 css -->
+  <link rel="stylesheet" href="css/pow_style.css" />
   <!-- jQuery js -->
   <script src="js/plugin/jQuery-v3.3.1.miin.js"></script>
   <!-- popper - 提示 tooltip js -->
@@ -34,16 +36,20 @@
   </script>
   <!-- bootstrap js -->
   <script src="js/plugin/bootstrap.min.js"></script>
-  <!-- 淨零永續學校通用 js -->
-  <script src="js/nz-script.js"></script>
+  <!-- 電網學校通用 js -->
+  <script src="js/pow-script.js"></script>
 </head>
 
 <body>
+  <div class="pow-bg-div">
+    <div class="pow-bg-img"></div>
+  </div>
   <header id="nzHeader" class="sticky-top">
+    <div class="pow-top-line"></div>
     <div class="container">
-      <div class="nz-nav nav justify-content-between align-items-center">
+      <div class="pow-nav nav justify-content-between align-items-center">
         <a class="navbar-brand" href="index.html">
-          <img class="nz-logo" src="img/layout/logo.png" alt="淨零永續學校" title="淨零永續學校" />
+          <img class="pow-logo" src="img/layout/logo.png" alt="電網學校" title="電網學校" />
         </a>
         <div class="d-none d-lg-block">
           <ul class="nav justify-content-end align-items-center font-weight-bold">
@@ -71,11 +77,11 @@
     </div>
     <nav>
       <!-- 電腦版 menu -->
-      <div class="nz-menu d-none d-lg-block">
+      <div class="pow-menu nz-menu d-none d-lg-block">
         <div class="container">
-          <ul class="nav justify-content-between">
+          <ul class="pow-menu-cont nav justify-content-between">
             <li class="dropdown nz-dropdown">
-              <a class="dropdown-toggle" href="knowledge.html">淨零知識</a>
+              <a class="dropdown-toggle" href="knowledge.html">電網知識</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="knowledge.html">搞懂零碳排系列</a>
                 <a class="dropdown-item" href="knowledge.html">生活碳足跡系列</a>
@@ -84,7 +90,7 @@
               </div>
             </li>
             <li class="dropdown nz-dropdown">
-              <a class="dropdown-toggle" href="courses.html">專業課程</a>
+              <a class="dropdown-toggle" href="courses.html">電網課程</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="courses.html">永續管理</a>
                 <a class="dropdown-item" href="courses.html">技術解方</a>
@@ -116,7 +122,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" href="#mobileMemucollapse-1" role="button" aria-expanded="false" aria-controls="mobileMemucollapse-1">
-              淨零知識
+              電網知識
               <span class="nz-caret-down">
                 <i class="fas fa-caret-down"></i>
               </span>
@@ -135,7 +141,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" href="#mobileMemucollapse-2" role="button" aria-expanded="false" aria-controls="mobileMemucollapse-2">
-              專業課程
+              電網課程
               <span class="nz-caret-down">
                 <i class="fas fa-caret-down"></i>
               </span>
@@ -241,9 +247,9 @@
       </div>
     </section>
 
-    <!-- 永續專業課程 -->
+    <!-- 永續電網課程 -->
     <section>
-      <h1 class="nz-title nz-primary my-4">永續管理專業課程</h1>
+      <h1 class="nz-title nz-primary my-4">永續管理電網課程</h1>
       <div id="courseCarousel-1" class="carousel slide nz-carousel" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#courseCarousel-1" data-slide-to="0" class="active"></li>
@@ -654,9 +660,9 @@
       </div>
     </section>
 
-    <!-- 技術解方專業課程 -->
+    <!-- 技術解方電網課程 -->
     <section class="mt-5">
-      <h1 class="nz-title nz-primary my-4">技術解方專業課程</h1>
+      <h1 class="nz-title nz-primary my-4">技術解方電網課程</h1>
       <div id="courseCarousel-2" class="carousel slide nz-carousel" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#courseCarousel-2" data-slide-to="0" class="active"></li>
@@ -1067,12 +1073,12 @@
       </div>
     </section>
   </div>
-  <!-- 淨零知識 -->
+  <!-- 電網知識 -->
   <div class="nz-bg-gray mt-5">
     <div class="container py-3">
       <section>
         <h1 class="nz-title nz-primary my-4">
-          淨零知識<strong class="nz-subtitle">
+          電網知識<strong class="nz-subtitle">
             <免費觀看>
           </strong>
         </h1>
@@ -1293,7 +1299,25 @@
   <!-- 人才聯盟成員 -->
   <div class="container my-5">
     <h1 class="nz-title nz-primary my-4">人才聯盟成員</h1>
-    <div class="row nz-member-row">
+    <dl id="logos" class="row">
+      <dt><img src="img/members/1.png" alt="工業技術研究院logo"></dt>
+      <dt><img src="img/members/2.png" alt="台灣電力與能源工程協會logo"></dt>
+      <dt><img src="img/members/3.png" alt="TATUNG LOGO"></dt>
+      <dt><img src="img/members/4.png" alt="AEC LOGO"></dt>
+      <dt><img src="img/members/5.jpg" alt="台電 LOGO"></dt>
+      <dt><img src="img/members/6.jpg" alt="健格科技股份有限公司"></dt>
+      <dt><img src="img/members/7.jpg" alt="康舒科技"></dt>
+      <dt><img src="img/members/8.jpg" alt="工網"></dt>
+      <dt><img src="img/members/9.png" alt="wpd"></dt>
+      <dt><img src="img/members/10.jpg" alt="台灣汽電共生股份有限公司"></dt>
+      <dt><img src="img/members/11.png" alt="海龍離岸風電"></dt>
+      <dt><img src="img/members/12.png" alt="northland power"></dt>
+      <dt><img src="img/members/13.png" alt="玉山能源股份有限公司"></dt>
+      <dt><img src="img/members/14.png" alt="台灣綜和研究院"></dt>
+      <dt><img src="img/members/15.png" alt="海鼎離岸風電計畫"></dt>
+      <dt><img src="img/members/16.jpg" alt=""></dt>
+    </dl>
+    <!-- <div class="row nz-member-row">
       <div class="col-md-4 col-6 nz-member-logo">
         <a href="http://www.cnfi.org.tw/front/bin/home.phtml" target="_blank" title="連結到中華民國全國工業總會網站">
           <img src="img/members/member-1.png" alt="中華民國全國工業總會Logo" />
@@ -1339,7 +1363,7 @@
           <img src="img/members/member-9.png" alt="台灣區絲織工業同業公會Logo" />
         </a>
       </div>
-    </div>
+    </div> -->
   </div>
 
   <!-- footer -->
