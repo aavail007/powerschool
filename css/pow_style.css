@@ -13,7 +13,7 @@
 }
 
 .pow-bg-img {
-  background: url('/img/layout/bg-2.png') left bottom no-repeat fixed;
+  background: url('../img/layout/bg-2.png') left bottom no-repeat fixed;
   opacity: 0.2;
   width: 100%;
   height: 100%;
@@ -21,7 +21,7 @@
 }
 
 .pow-bg-img-2 {
-  background: url('/img/layout/bg.png') right bottom no-repeat fixed;
+  background: url('../img/layout/bg.png') right bottom no-repeat fixed;
   opacity: 0.2;
   width: 100%;
   height: 100%;
