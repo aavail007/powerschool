@@ -101,6 +101,10 @@ dl#logos dt img {
 
 /* RWD */
 @media(max-width: 991.98px) {
+  .nz-small-header .pow-nav{
+    padding: 8px 0;
+  }
+
   .pow-logo {
     height: 45px;
     top: 6px;
@@ -108,12 +112,13 @@ dl#logos dt img {
 
   .nz-small-header .pow-logo {
     height: 44px;
-    top: 2px;
+    top: 4px;
   }
 
   .pow-header-img {
     left: 56px;
     height: 42px;
+    bottom: 5px;
   }
 
   .pow-bg-img,
