@@ -111,6 +111,11 @@ dl#logos dt img {
     top: 2px;
   }
 
+  .pow-header-img {
+    left: 56px;
+    height: 42px;
+  }
+
   .pow-bg-img,
   .pow-bg-img-2  {
     display: none;
