@@ -100,7 +100,6 @@ dl#logos dt img {
 }
 
 /* Tab 卡片 */
-
 .pow-card-nav.nav-tabs {
   border-bottom: 4px solid #55b1a3;
   overflow-x: auto;
@@ -174,11 +173,41 @@ dl#logos dt img {
   -webkit-line-clamp: 12; /*最多顯示幾行*/
   -webkit-box-orient: vertical;
   min-height: 252px;
+  color: #898989;
 }
 
 .pow-card-date {
   font-size: 12px;
   color: #a1a1a1;
+}
+
+.pow-card-btn {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.pow-card-angle {
+  margin-left: 10px;
+}
+
+.pow-card-btn:hover .pow-card-angle {
+  animation-name: anglToeLeft;
+  animation-duration: 0.5s;
+}
+
+/* 按鈕箭頭動畫 */
+@keyframes anglToeLeft {
+  0% {
+    margin-left: 10px;
+  }
+  40% {
+    margin-left: 6px;
+  }
+  100% {
+    margin-left: 10px;
+  }
 }
 
 /* RWD */
@@ -206,5 +235,22 @@ dl#logos dt img {
   .pow-bg-img,
   .pow-bg-img-2  {
     display: none;
+  }
+
+  /* 卡片 tab */
+  .pow-card-p h3 {
+    font-size: 22px;
+  }
+
+  .pow-overflow-ellipsis {
+    font-size: 16px;
+  }
+
+  .pow-card-date {
+    font-size: 14px;
+  }
+
+  .pow-card-btn {
+    font-size: 18px;
   }
 }
